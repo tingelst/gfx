@@ -66,7 +66,7 @@ namespace gfx{
             vatt.pos.set( Shader :: Current(), "texCoord", sizeof(Vertex), 2, Vertex::ot() );            
           } 
                       
-            void bindAll(){
+           void bindAll(){
             program -> bind();
             bindAttributes();  
             program -> unbind();
@@ -134,7 +134,7 @@ namespace gfx{
             void line( MBO& m, int num = -1, int off = 0 ) {
                 m.bind();
                 enable(); 
-                pointer();
+                pointer(); //was pointer();
                 m.drawElements(num, off);
                 disable();
                 m.unbind();

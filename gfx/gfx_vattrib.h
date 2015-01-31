@@ -104,7 +104,7 @@ namespace gfx {
         VAttrib pos, norm, col, tex;
         void enable() { pos.enable(); norm.enable(); col.enable(); tex.enable(); }
         void disable() { pos.disable(); norm.disable(); col.disable(); tex.disable(); }
-        void pointer() { pos.pointer();  norm.pointer(); col.pointer(); tex.pointer(); }
+        void pointer() { pos.pointer(0);  norm.pointer(0); col.pointer(0); tex.pointer(0); }
     };
     
 } //ctl::
