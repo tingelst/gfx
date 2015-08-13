@@ -1,0 +1,8 @@
+# - Config file for the gfx package
+# It defines the following variables
+#  GFX_INCLUDE_DIRS - include directories for gfx
+
+# Compute paths
+get_filename_component(SELF_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(GFX_INCLUDE_DIRS "@CMAKE_INSTALL_PREFIX@/include;@CMAKE_INSTALL_PREFIX@/include/gfx")
+
